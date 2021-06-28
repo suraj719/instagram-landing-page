@@ -1,0 +1,201 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 10rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 93rem;
+  margin: 3rem auto 0;
+}
+
+.wrapper > .container {
+  display: flex;
+  padding: 0 8rem;
+}
+
+.phone-app {
+  flex: 1;
+  height: 62rem;
+  background: url("./images/mobile-app.png");
+}
+
+.form-data {
+  width: 100%;
+  max-width: 35rem;
+  margin-top: 3rem;
+}
+
+.form-data form {
+  background-color: #fff;
+  border: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.logo img {
+  width: 17rem;
+  margin-bottom: 2.5rem;
+}
+
+.form-data form input {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid #eee;
+  border-radius: 0.4rem;
+}
+
+.form-btn {
+  background-color: #3897f0;
+  margin: 1rem 0 1.5rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.separator {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: Arial;
+  color: #999999;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  position: absolute;
+  background-color: #eee;
+  width: 40%;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+.facebook-login {
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica;
+  font-weight: bold;
+  color: #385185;
+  margin-bottom: 2.5rem;
+}
+
+.facebook-login i {
+  font-size: 2rem;
+  margin-right: 0.7rem;
+}
+
+.password-reset {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica;
+  color: #003569;
+}
+
+.sign-up {
+  background-color: white;
+  border: 2px solid #eee;
+  font-size: 1.4rem;
+  color: #262626;
+  padding: 2rem 0;
+  margin: 1rem 0;
+  font-family: Arial, Helvetica;
+  text-align: center;
+}
+.sign-up a {
+  color: #3897f0;
+}
+
+.get-the-app {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.get-the-app span {
+  font-family: Arial, Helvetica;
+  color: #262626;
+  display: block;
+}
+
+.badges {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.badges img {
+  max-width: 14rem;
+  margin: 2rem 0;
+}
+.badges img:first-child {
+  margin-right: 1rem;
+}
+
+footer {
+  padding: 5rem;
+}
+
+footer .container {
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.footer-nav ul li a {
+  margin-right: 1.6rem;
+  color: #8e8e8e;
+}
